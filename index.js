@@ -12,7 +12,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const OUTPUT_DIR = path.resolve(__dirname, 'output');
 const outputPath = path.join(OUTPUT_DIR, 'team.html');
 
-const render = require('./lib/htmlRenderer');
+const render = require('./lib/html-generator');
 const Employee = require('./lib/Employee');
 
 // Write code to use inquirer to gather information about the development team members,
